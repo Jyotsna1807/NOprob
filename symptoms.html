@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Select Symptoms - NOprob</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="centered">
+  <div class="card">
+    <h2><i class="fas fa-notes-medical"></i> Select Your Symptoms</h2>
+    <p>(You can select multiple symptoms)</p>
+
+    <select id="symptoms" multiple>
+      <option value="fever">Fever</option>
+      <option value="fatigue">Fatigue</option>
+      <option value="frequent-urination">Frequent Urination</option>
+      <option value="ice-craving">Craving Ice</option>
+      <option value="body-pain">Body Pain</option>
+      <option value="red-eyes">Red Eyes</option>
+      <option value="headache">Headache</option>
+      <option value="cough">Cough</option>
+      <option value="nausea">Nausea</option>
+      <option value="anxiety">Anxiety</option>
+    </select>
+
+    <br><br>
+    <button onclick="diagnoseSymptoms()">Diagnose</button>
+    <button onclick="searchGoogle()" class="google-btn">
+      <i class="fab fa-google"></i> Search on Google
+    </button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

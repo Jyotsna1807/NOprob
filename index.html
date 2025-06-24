@@ -1,43 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>NOprob</title>
-  <link rel="stylesheet" href="style.css"/>
+  <meta charset="UTF-8">
+  <title>NOprob - Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-<body>
-  <h1>🤖 NOprob</h1>
-  <p>Your personal symptom checker and wellness buddy</p>
-
-  <div id="symptom-form">
-    <label for="symptoms">Select your symptoms:</label><br>
-    <select id="symptoms" multiple>
-      <option value="fever">Fever</option>
-      <option value="headache">Headache</option>
-      <option value="fatigue">Fatigue</option>
-      <option value="anxiety">Anxiety</option>
-      <option value="sadness">Sadness</option>
-      <option value="cough">Cough</option>
-      <option value="nausea">Nausea</option>
-      <option value="frequent-urination">Frequent Urination</option>
-      <option value="ice-craving">Craving Ice</option>
-      <option value="body-pain">Body Pain</option>
-      <option value="red-eyes">Red Eyes</option>
-    </select>
-
-    <p>Or type your symptoms:</p>
-    <input type="text" id="typed-symptoms" placeholder="e.g., I have fever and nausea">
-
-    <div class="button-group">
-      <button onclick="diagnose()"><span>🧠</span> Diagnose</button>
-      <button onclick="searchGoogle()"><span>🔍</span> Search on Google</button>
-      <button onclick="talkToJojo()"><span>💬</span> Talk to Jojo</button>
-    </div>
+<body class="centered">
+  <div class="card">
+    <h1><i class="fas fa-shield-heart"></i> NOprob</h1>
+    <p>Your friendly symptom checker 🧠</p>
+    <button onclick="window.location.href='symptoms.html'">🩺 Get Started</button>
   </div>
-
-  <div id="result"></div>
-
-  <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Diagnosis Results - NOprob</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body onload="displayResults()" class="centered">
+  <div class="card">
+    <h2><i class="fas fa-file-medical-alt"></i> Diagnosis Results</h2>
+    <div id="results-box"></div>
+    <button onclick="window.location.href='symptoms.html'">🔁 Start Over</button>
+  </div>
+
+  <!-- Jojo Chat Assistant -->
+  <div class="chatbox">
+    <h3><i class="fas fa-robot"></i> Ask Jojo</h3>
+    <input type="text" id="userMessage" placeholder="Ask me anything...">
+    <button onclick="chatWithJojo()">Send</button>
+    <div id="chatResponse"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
